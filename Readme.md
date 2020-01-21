@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Титова](https://up.htmlacademy.ru/htmlcss/27/user/1172273).
-* Наставник: [Вадим Новаш] (https://htmlacademy.ru/profile/stakeout).
+* Наставник: 'https://github.com/stakeout'.
 
 ---
 
