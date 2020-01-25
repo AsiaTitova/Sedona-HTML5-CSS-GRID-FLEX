@@ -117,7 +117,25 @@
             Укажите предполагаемые даты поездки, <br>
             мы покажем вам лучшие предложения гостиниц в седоне
           </p>
-          <!--Тут будет форма -->  
+          
+          <form>
+            <h3>Поиск гостиницы в седоне</h3>
+
+            <label for="check-in">Дата заезда</label>
+            <input type="date" id="check-in" name="chek-in" value="2017-04-24"><br>
+
+            <label for="check-out">Дата выезда</label>
+            <input type="date" id="check-out" name="check-out" value="2017-07-04"><br>
+
+            <label for="adult">Взрослые:</label>
+            <input type="number" id="adult" name="adult" step="1" value="2">
+
+            <label for="child">Дети:</label>
+            <input type="number" id="child" name="child" step="1" value="0"><br>
+
+            <input type="submit" name="find" value="Найти">
+          </form>
+
         </section>
     </main>
     <footer>
