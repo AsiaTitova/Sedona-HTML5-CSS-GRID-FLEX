@@ -21,7 +21,7 @@
 
     <main class="page-content">
       
-      <h1>Седона</h1>
+      <h1 class="visually-hidden">Седона</h1>
         
       <section class="promo">
         <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать">
@@ -128,10 +128,14 @@
             <input type="date" id="check-out" name="check-out" value="2017-07-04">
 
             <label for="adult">Взрослые:</label>
+            <span class="minus">-</span>
             <input type="number" id="adult" name="adult" step="1" value="2">
+            <span class="plus">+</span>
 
             <label for="children">Дети:</label>
+            <span class="minus">-</span>
             <input type="number" id="children" name="children" step="1" value="0">
+            <span class="plus">+</span>
 
             <input type="submit" name="find" value="Найти" class="find">
           </form>
