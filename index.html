@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -27,10 +28,11 @@
         
       <section class="promo">
         <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать">
-        <p>
+        
+        <p class="promo-caption">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
-        <p>
+        <p class="promo-reasons">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
       </section>
@@ -101,7 +103,7 @@
             </p>
           </li>
           <li class="reasons-_item gray-bg">
-            <h3>Мало туристов</h3>
+            <h2>Мало туристов</h2>
             <p> 
               — №5 —
             </p>
@@ -124,11 +126,11 @@
           <form action="URL" method="post" class="offers-form">
             <p>
               <label for="check-in">Дата заезда</label>
-              <input type="date" id="check-in" name="chek-in" value="2017-04-24">
+              <input type="text" class="data" id="check-in" name="chek-in" placeholder="24 апреля 2017" onfocus="(this.type='data')" onblur="(this.type='text')">
             </p>
             <p>
               <label for="check-out">Дата выезда</label>
-              <input type="date" id="check-out" name="check-out" value="2017-07-04">
+              <input type="text" class="data" id="check-out" name="check-out" placeholder="4 июля 2017" onfocus="(this.type='data')" onblur="(this.type='text')">
             </p>
             <p>
               <label for="adult">Взрослые:</label>
@@ -151,7 +153,7 @@
     <footer class="page-footer">
       <p class="contacts">
         <span class="hashtag">#visitSEDONA</span>
-        <a href="tel:+74956660266" aria-label="Номер телефона">Тел: +7(495) 666-02-66</a>
+        <a href="tel:+74956660266" class="tel" aria-label="Номер телефона">Тел: +7(495) 666-02-66</a>
       </p>
 
       <div class="socials">
