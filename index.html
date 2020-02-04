@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -11,10 +13,10 @@
           <img src="img/logo.svg" width="140" height="71" alt="Логотип сайта Седона">
         </div>
         <ul class="navigation-list">
-          <li class="navigation-item"><a href="info.html">Информация</a></li>
-          <li class="navigation-item"><a href="gallery.html">Фото и Видео</a></li>
-          <li class="navigation-item"><a href="map.html">Карта штата</a></li>
-          <li class="navigation-item"><a href="hotels.html">Гостиницы</a></li>
+          <li class="navigation-item"><a href="info.html" aria-label="Информация">Информация</a></li>
+          <li class="navigation-item"><a href="gallery.html" aria-label="Фото и видео">Фото и Видео</a></li>
+          <li class="navigation-item"><a href="map.html" aria-label="Карта штата">Карта штата</a></li>
+          <li class="navigation-item"><a href="hotels.html" aria-label="Гостиницы">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -117,47 +119,52 @@
             мы покажем вам лучшие предложения гостиниц в седоне
           </p>
 
-          <button type="button" class="offers-button">Поиск гостиницы в седоне</button>
+          <button type="button" class="offers-button" aria-label="Поиск гостиницы">Поиск гостиницы в седоне</button>
 
           <form action="URL" method="post" class="offers-form">
-            
-            <label for="check-in">Дата заезда</label>
-            <input type="date" id="check-in" name="chek-in" value="2017-04-24">
-
-            <label for="check-out">Дата выезда</label>
-            <input type="date" id="check-out" name="check-out" value="2017-07-04">
-
-            <label for="adult">Взрослые:</label>
-            <span class="minus">-</span>
-            <input type="number" id="adult" name="adult" step="1" value="2">
-            <span class="plus">+</span>
-
-            <label for="children">Дети:</label>
-            <span class="minus">-</span>
-            <input type="number" id="children" name="children" step="1" value="0">
-            <span class="plus">+</span>
-
-            <input type="submit" name="find" value="Найти" class="find">
+            <p>
+              <label for="check-in">Дата заезда</label>
+              <input type="date" id="check-in" name="chek-in" value="2017-04-24">
+            </p>
+            <p>
+              <label for="check-out">Дата выезда</label>
+              <input type="date" id="check-out" name="check-out" value="2017-07-04">
+            </p>
+            <p>
+              <label for="adult">Взрослые:</label>
+              <span class="minus">-</span>
+              <input type="number" id="adult" name="adult" step="1" value="2">
+              <span class="plus">+</span>
+            </p>
+            <p>
+              <label for="children">Дети:</label>
+              <span class="minus">-</span>
+              <input type="number" id="children" name="children" step="1" value="0">
+              <span class="plus">+</span>
+            </p>
+            <p>
+              <input type="submit" name="find" value="Найти" class="find" aria-label="Найти">
+            </p>
           </form>
       </section>
     </main>
     <footer class="page-footer">
       <p class="contacts">
         <span class="hashtag">#visitSEDONA</span>
-        <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+        <a href="tel:+74956660266" aria-label="Номер телефона">Тел: +7(495) 666-02-66</a>
       </p>
 
       <div class="socials">
         <ul class="socials-list">
-          <li class="socials-item"><a href="#"><img src="img/twitter.svg" width="17px" height="15px" alt="твиттер"></a></li>
-          <li class="socials-item"><a href="#"><img src="img/fb-icon.svg" width="17px" height="15px" alt="фейсбук"></a></li>
-          <li class="socials-item"><a href="#"><img src="img/youtube.svg" width="17px" height="15px" alt="ютуб"></a></li>
+          <li class="socials-item"><a href="#" aria-label="Твиттер"><img src="img/twitter.svg" width="17px" height="15px" alt="твиттер"></a></li>
+          <li class="socials-item"><a href="#" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="17px" height="15px" alt="фейсбук"></a></li>
+          <li class="socials-item"><a href="#" aria-label="Ютуб"><img src="img/youtube.svg" width="17px" height="15px" alt="ютуб"></a></li>
         </ul>
       </div>
 
       <p class="copyright">
         Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="blank"><img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип разработчика"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="Сайт htmlacademy"><img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип разработчика"></a>
       </p>
     </footer>
   </body>
