@@ -2,6 +2,7 @@ body {
   width: 1200px;
   height: 2762px;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+
   margin-left: 40px;
 
   font-family: "PT Sans", Arial, sans;
@@ -50,13 +51,49 @@ visibility: hidden;
 .current {
   color: #766357;
 }
-.navigation-item {
-  width: 93px;
-  height: 12px;
 
+.page-header ul {
+   width: 1200px;
+  height: 56px;
+  margin:0 auto;
+  padding: 0 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: spase-around;
+}
+
+.page-header ul:first-child {
+  margin-left: 0px;
+}
+.page-header ul:nth-child(2) {
+  margin-left: 239px;
+}
+.page-header ul:nth-child(4) {
+  margin-right: 239px;
+}
+.page-header ul:last-child {
+  margin-right: 0px;
+}
+
+.navigation {
+  background-color: #ffffff;
+}
+
+.logo {
+ 
+  align-self: center;
+  margin-left: 529px;
+}
+
+.navigation-item {  
   text-align: center;
+  vertical-align: middle;
   font-weight: bold;
-  padding: 22px 74px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 74px;
+  padding-right: 74px;
 }
 
 .promo {
@@ -80,6 +117,14 @@ visibility: hidden;
   color: #333333;
 }
 
+.reasons ol {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 .reasons-list {
   text-align: center;
   line-height: 1.5;
@@ -99,9 +144,22 @@ visibility: hidden;
   color: #000000;
 }
 
+.reasons-item {
+  width: 400px;
+  height: 256px;
+}
+
+.reasons-picture {
+  width: 800px;
+  height: 256px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
 .blue-bg {
   color: #ffffff;
-
   background-color: #81b3d2;
 }
 
@@ -109,15 +167,16 @@ visibility: hidden;
   color:#ffffff;
 }
 
-gray-bg {
+.gray-bg {
   color: #333333;
-
   background-color: #eeeeee;
 }
 
 .advantages {
+  display: flex;
+  
   color: #333333;
-background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .offers {
