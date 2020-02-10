@@ -7,6 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
+  <div class="page-wrapper">
   <body>
     <header class="page-header">
       <nav class="navigation">
@@ -14,9 +15,9 @@
           <img src="img/logo.svg" width="140" height="71" alt="Логотип сайта Седона">
         </a>
         <ul class="navigation-list">
-          <li class="navigation-item"><a href="index.html" aria-label="Информация">Информация</a></li>
-          <li class="navigation-item"><a href="gallery.html" aria-label="Фото и видео">Фото и Видео</a></li>
-          <li class="navigation-item"><a href="map.html" aria-label="Карта штата">Карта штата</a></li>
+          <li class="navigation-item"><a href="#" aria-label="Информация">Информация</a></li>
+          <li class="navigation-item"><a href="#" aria-label="Фото и видео">Фото и Видео</a></li>
+          <li class="navigation-item"><a href="#" aria-label="Карта штата">Карта штата</a></li>
           <li class="navigation-item"><a class="current">Гостиницы</a></li>
         </ul>
       </nav>
@@ -75,7 +76,7 @@
 
     <section class="filters">
       <p>Найдено: <span>3</span></p>
-      <p>Сортировка:</p>
+      <p class="sorting">Сортировка:</p>
       <ul class="filters-list">
         <li class="filters-item"><a rel="nofollow" href="" aria-label="Фильтр по цене">По цене</a></li>
         <li class="filters-item"><a rel="nofollow" href="" aria-label="Фильтр по тиипу">По типу</a></li>
@@ -89,68 +90,91 @@
 
     <section class="results">
       <ul class="results-list">
+        
         <li class="results-item">
           
-          <img src="img/hotel-picture.jpg" width="135" height="90" alt="Фото отеля">
-          
+          <div class="image-wrap">
+            <img src="img/hotel-picture.jpg" width="135" height="90" alt="Фото отеля">
+          </div>
+
           <div class="info">
-            <h2><a href="" aria-label="Отель Amara Resort & Spa">Amara Resort & Spa</a></h2>
-            <div class="left-col">
-              <p>Гостиница</p>
-              <a href="#" class="detail" aria-label="Подробнее">Подробнее</a>
+            
+            <div class="name">
+              <h2><a href="" aria-label="Отель Amara Resort & Spa">Amara Resort & Spa</a></h2>
             </div>
-            <div class="right-col">
-              <p>От 4000 Р.</p>
-              <a href="#" class="reserve" aria-label="Забронировать">Забронировать</a>
+
+            <div class="colls">
+              <div class="left-col">
+                <p>Гостиница</p>
+                <a href="#" class="detail" aria-label="Подробнее">Подробнее</a>
+              </div>
+              <div class="right-col">
+                <p>От 4000 Р.</p>
+                <a href="#" class="reserve" aria-label="Забронировать">Забронировать</a>
+              </div>
             </div>
           </div>
           
           <div class="rating"> 
-             <div class="stars"> </div>
+             <div class="stars four"> </div>
             <p>Рейтинг: 8,5</p>
           </div>  
         </li>
 
         <li class="results-item">
-          
-          <img src="img/hotel-picture2.jpg" width="135" height="90" alt="Фото отеля">
-          
+         
+          <div class="image-wrap">
+            <img src="img/hotel-picture2.jpg" width="135" height="90" alt="Фото отеля">
+          </div>
+
           <div class="info">
-            <h2><a href="" aria-label="Мотель Desert Quail Inn">Desert Quail Inn</a></h2>
-            <div class="left-col">
-              <p>Мотель</p>
-              <a href="#" class="detail" aria-label="Подробнее">Подробнее</a>
+            <div class="name">
+              <h2><a href="" aria-label="Мотель Desert Quail Inn">Desert Quail Inn</a></h2>
             </div>
-            <div class="right-col">
-              <p>От 3000 Р.</p>
-              <a href="#" class="reserve" aria-label="Забронировать">Забронировать</a>
+
+            <div class="colls">
+              <div class="left-col">
+                <p>Мотель</p>
+                <a href="#" class="detail" aria-label="Подробнее">Подробнее</a>
+              </div>
+              <div class="right-col">
+                <p>От 3000 Р.</p>
+                <a href="#" class="reserve" aria-label="Забронировать">Забронировать</a>
+              </div>
             </div>
           </div>
           
           <div class="rating">
-            <div class="stars"> </div>
+            <div class="stars three"> </div>
             <p>Рейтинг: 8,9</p>
           </div>  
         </li>
 
         <li class="results-item">
-          
-          <img src="img/hotel-picture3.jpg" width="135" height="90" alt="Фото отеля">
-          
+
+          <div class="image-wrap">
+            <img src="img/hotel-picture3.jpg" width="135" height="90" alt="Фото отеля">
+          </div>
+
           <div class="info">
-            <h2><a href="" aria-label="Апартаменты Villas at Poco Diablo">Villas at Poco Diablo</a></h2>
-            <div class="left-col">
-              <p>Апартаменты</p>
-              <a href="#" class="detail" aria-label="Подробнее">Подробнее</a>
+            <div class="name">
+              <h2><a href="" aria-label="Апартаменты Villas at Poco Diablo">Villas at Poco Diablo</a></h2>
             </div>
-            <div class="right-col">
-              <p>От 2000 Р.</p>
-              <a href="#" class="reserve" aria-label="Забронировать">Забронировать</a>
+
+            <div class="colls">
+              <div class="left-col">
+                <p>Апартаменты</p>
+                <a href="#" class="detail" aria-label="Подробнее">Подробнее</a>
+              </div>
+              <div class="right-col">
+                <p>От 2000 Р.</p>
+                <a href="#" class="reserve" aria-label="Забронировать">Забронировать</a>
+              </div>
             </div>
           </div>
 
           <div class="rating">
-             <div class="stars"></div>
+            <div class="stars two"></div>
             <p>Рейтинг: 9,2</p>
           </div>    
         </li>
@@ -159,7 +183,7 @@
 
     <footer class="page-footer">
         <p class="contacts">
-          <span class="hashtag">#visitSEDONA</span>
+          <span>#visitSEDONA</span>
           <a href="tel:+74956660266" aria-label="Номер телефона">Тел: +7(495) 666-02-66</a>
         </p>
   
@@ -172,9 +196,11 @@
         </div>
   
         <p class="copyright">
-          Website by
-          <a href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="Сайт HTMLacademy"><img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип разработчика"></a>
+          <div >Website by</div>
+          <a class="by" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="Сайт HTMLacademy"><img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип разработчика"></a>
+        
         </p>
       </footer>
     </body>
+    </div>
   </html>

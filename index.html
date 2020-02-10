@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
         <div class="logo">
@@ -27,51 +28,62 @@
       <h1 class="visually-hidden">Седона</h1>
         
       <section class="promo">
-        <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать">
-        
+        <div class="promo-picture">
+          <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать">
+        </div>
+        <div class="promo-wrapper">
         <p class="promo-caption">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
         <p class="promo-reasons">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
+      </div>
       </section>
         
       <section class="reasons">
         <ol class="reasons-list">
-          <li class="reasons-item reverse blue-bg">
-
-            <img class="reasons-picture" src="img/feature-picture.jpg" width="800" height="256" alt="Saloon">
-              <div>
-                <h2>Настоящий городок</h2>
-              </div>
-              <div>
-                <p>
+          <li class="reasons-item  blue-bg">
+            <div class="reasons-wrap">
+              <div class="min-wrap">
+              <h2>Настоящий<br>
+                 городок</h2>
+              <p>
                   — №1 —
-                </p>
-                <p>
+              </p>
+              <p>
                   Седона — не аттракцион для туристов, там течёт своя жизнь
-                </p>
+              </p>
               </div>
-          </li>
-             
+            </div>
+
+            <div class="img-wrap">
+              <img src="img/feature-picture.jpg" width="800" height="256" alt="Saloon">
+            </div> 
+
             <ul class="advantages">
               <li class="advantages-item">
-                <img src="img/icon-1.svg" width="75px" height="72px" alt="Жильё">
+                <div class="icon-wrapper">   
+                  <img src="img/icon-1.svg" width="75px" height="72px" alt="Жильё">
+                </div>
                 <h3>Жильё</h3>
                 <p>
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
               <li class="advantages-item">
+                <div class="icon-wrapper"> 
                 <img src="img/icon-2.svg" width="75px" height="72px" alt="Еда">
+                </div>
                 <h3>Еда</h3>
                 <p>
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
               <li class="advantages-item">
+                <div class="icon-wrapper"> 
                 <img src="img/icon-3.svg" width="75px" height="72px" alt="Сувениры">
+                </div>
                 <h3>Сувениры</h3>
                 <p>
                   Не только китайского, но и местного производства!
@@ -80,21 +92,30 @@
             </ul>
           </li>
 
-          <li class="reasons-item blue-bg">
- 
-            <img class="reasons-picture" src="img/layer-5.jpg" width="800" height="256" alt="Мост дьявола">
-            <h2>Мост дьявола</h2>
-            <p>
-              -2-
-            </p>
-            <p>
-              Да, по нему можно пройти! Если конечно вы осмелитесь
-            </p>
+          <li class="reasons-item reverse blue-bg">
+            
+            <div class="reasons-wrap">
+              <div class="min-wrap">
+              <h2>Мост <br> дьявола</h2>
+              <p>
+                  -2-
+              </p>
+              <p>
+                  Да, по нему можно пройти! Если конечно вы осмелитесь
+              </p>
+              </div>
+            </div>
+            
+            <div class="img-wrap">
+              <img src="img/layer-5.jpg" width="800" height="256" alt="Мост дьявола">
+            </div>
           </li>
 
           <li class="reasons-item gray-bg">
- 
-            <h2>Небольшая площадь</h2>
+            <div class="reasons-wrap">
+              <div class="min-wrap">
+              <h2>Небольшая<br>
+                 площадь</h2>
             <p>
               — №3 —
             </p>
@@ -102,42 +123,50 @@
               Все достопримечательности находятся очень близко
             </p>
             </div>
+            </div>
           </li>
           <li class="reasons-item gray-bg">
-            
-            <h2>Красивая дорога</h2>
+            <div class="reasons-wrap">
+              <div class="min-wrap">
+            <h2>Красивая<br>
+               дорога</h2>
             <p>
               — №4 —
             </p>
             <p>
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
-            
+            </div>
+            </div>
           </li>
-          <li class="reasons-_item gray-bg">
- 
-            <h2>Мало туристов</h2>
+          <li class="reasons-item gray-bg">
+            <div class="reasons-wrap">
+              <div class="min-wrap">
+            <h2>Мало<br>
+               туристов</h2>
             <p> 
               — №5 —
             </p>
             <p>              
               Большинство едет в гранд каньон и толпится там
             </p>
-           
+            </div>
+            </div>
           </li>
         </ol>
       </section>
 
       <section class="offers">
-          <h2>Заинтересовались?</h2>
+          <div class="question">
+        <h2>Заинтересовались?</h2>
           <p>
             Укажите предполагаемые даты поездки,
             мы покажем вам лучшие предложения гостиниц в седоне
           </p>
-
+        </div>
           <button type="button" class="offers-button" aria-label="Поиск гостиницы">Поиск гостиницы в седоне</button>
-
-          <form action="URL" method="post" class="offers-form">
+          <div class="form-wrap">
+            <form action="URL" method="post" class="offers-form">
             <p>
               <label for="check-in">Дата заезда</label>
               <input type="text" class="data" id="check-in" name="chek-in" placeholder="24 апреля 2017" onfocus="(this.type='data')" onblur="(this.type='text')">
@@ -162,8 +191,10 @@
               <input type="submit" name="find" value="Найти" class="find" aria-label="Найти">
             </p>
           </form>
+          </div>
       </section>
     </main>
+    
     <footer class="page-footer">
       <p class="contacts">
         <span class="hashtag">#visitSEDONA</span>
@@ -183,5 +214,6 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="Сайт htmlacademy"><img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип разработчика"></a>
       </p>
     </footer>
+  </div>
   </body>
 </html>
