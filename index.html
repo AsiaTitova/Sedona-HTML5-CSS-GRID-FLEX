@@ -87,7 +87,7 @@
             <div class="reasons-info">  
               <h2>Мост дьявола</h2>
               <p>
-                  -№2-
+                — №2 —
               </p>
               <p>
                   Да, по нему можно пройти! Если конечно вы осмелитесь
@@ -144,21 +144,21 @@
         </div>
           <button type="button" class="offers-button" aria-label="Поиск гостиницы">Поиск гостиницы в седоне</button>
           <div class="form-wrap">
-            <form action="URL" method="post" class="offers-form">
-            <p class="check-in">
+            <form action="URL" method="post" class="form-show form-clouse">
+            <p class="full-width">
               <label for="check-in">Дата заезда</label>
-              <input type="text" id="check-in" name="chek-in"  placeholder="24 апреля 2017">
-              <button class="calendar">
+              <input type="text" id="check-in" name="chekin"  placeholder="24 апреля 2017" required>
+              <button type="button" class="calendar">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="#cacaca">
                   <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
                   <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
                 </svg>
               </button>
             </p>
-            <p class="check-out">
+            <p class="full-width">
               <label for="check-out">Дата выезда</label>
-              <input type="text" id="check-out" name="check-out" placeholder="4 июля 2017">
-              <button class="calendar">
+              <input type="text" id="check-out" name="checkout" placeholder="4 июля 2017" required>
+              <button type="button" class="calendar">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="#cacaca">
                   <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
                   <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
@@ -166,17 +166,17 @@
               </button>
             </p>
 
-            <p class="adults">
+            <p class="half-width">
               <label for="adults">Взрослые:</label>
-              <button class="minus">-</button>
-              <input type="number" id="adults" name="adults" min="0" size="38" step="1" value="2">
-              <button class="plus">+</button>
+              <button type="button" class="minus"> </button>
+              <input type="number" id="adults" name="adults" min="0" size="38" step="1" value="2" required>
+              <button type="button" class="plus"> </button>
             </p>
-            <p class="children">
+            <p class="half-width children">
               <label for="children">Дети:</label>
-              <button class="minus">-</button>
+              <button type="button" class="minus"> </button>
               <input type="number" id="children" name="children" min="0" step="1" value="0">
-              <button class="plus">+</button>
+              <button type="button" class="plus"> </button>
             </p>
         
             <p>
@@ -187,7 +187,7 @@
       </section>
     </main>
     
-    <footer class="page-footer">
+    <footer class="page-footer index-footer">
       <p class="contacts">
         <span class="hashtag">#visitSEDONA</span>
         <a href="tel:+74956660266" class="tel" aria-label="Номер телефона">Тел: +7(495) 666-02-66</a>
@@ -217,5 +217,45 @@
       </div>
     </footer>
   </div>
+
+  <script src="../js/formasearch.js"></script>
+  <script src="../js/map.js"></script>
+
+  <script>
+    
+    var button = document.querySelector(".offers-button");
+    var popup = document.querySelector(".form-show"); 
+    var checkin = popup.querySelector("[name=checkin]");
+    var checkout = popup.querySelector("[name=checkout]");
+    var adults = popup.querySelector("[name=adults]");
+    var children = popup.querySelector("[name=children]");
+    var form = popup.querySelector(".form-wrap");
+ 
+    button.addEventListener("click", function (evt) {
+        
+        evt.preventDefault();
+        popup.classList.remove("form-show");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("form-show");
+    });
+
+    form.addEventListener("submit", function (evt) {
+      if (!checkin.value || !checkout.value || !adults.value) {
+        evt.preventDefault();
+        console.log("Заполните форму регистрации!");
+      }
+    });
+
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (popup.classList.contains("form-show")) {
+          evt.preventDefault();
+          popup.classList.remove("form-show");
+        }
+      }
+    })
+  </script>
+
   </body>
 </html>
