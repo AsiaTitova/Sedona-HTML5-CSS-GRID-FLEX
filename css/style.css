@@ -333,8 +333,42 @@ display: none;
 
   display: flex;
   flex-wrap: wrap;
+
+  z-index: 2;
+
+  animation-name: bounse;
+  animation-duration: 1s;
 }
 
+@keyframes bounse {
+  0% {transform: translateY(-86px) translateX(-50%)}
+  20% {transform: translateY(-70px) translateX(-50%)}
+  40% {transform: translateY(-50px) translateX(-50%)}
+  60% {transform: translateY(-30px) translateX(-50%)}
+  80% {transform: translateY(-15px) translateX(-50%)}
+  100% {transform: translateY(0px) translateX(-50%)}
+        
+}
+
+
+
+.offers-button {
+  position: relative;
+  z-index: 1;
+}
+
+.form-wrap {
+  position: relative;
+  min-height: 593px;
+}
+
+.map {
+  position: absolute;
+  z-index: 0;
+  width: 1200px;
+  height: 593px;
+  
+}
 
 
 .form-show p:last-child {
@@ -512,6 +546,8 @@ input::-webkit-inner-spin-button {
   color: #000000;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .contacts {
