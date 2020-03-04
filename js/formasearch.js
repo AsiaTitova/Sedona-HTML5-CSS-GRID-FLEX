@@ -6,13 +6,11 @@ if (popup) {
 
 var button = document.querySelector(".offers-button");
 
-var checkin = popup.querySelector("[name=checkin]");
+var checkin = popup.querySelector("[name=cheсkin]");
 var checkout = popup.querySelector("[name=checkout]");
 var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
-var form = popup.querySelector(".form");
-
-
+var form = popup.querySelector("form");
 
 button.addEventListener("click", function (evt) {
     
@@ -21,9 +19,10 @@ button.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!checkin.value || !checkout.value || !adults.value) {
-    evt.preventDefault();
-    console.log("Заполните форму регистрации!");
+    if (!cheсkin.value || !checkout.value || !adults.value) {
+      evt.preventDefault();
+      console.log("Введите информацию");
+      popup.classList.add("modal-error")
   }
 });
 
