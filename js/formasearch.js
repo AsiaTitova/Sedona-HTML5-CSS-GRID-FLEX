@@ -21,8 +21,8 @@ button.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
     if (!cheсkin.value || !checkout.value || !adults.value) {
       evt.preventDefault();
-      console.log("Введите информацию");
-      popup.classList.add("modal-error")
+      popup.classList.add("modal-error");
+
   }
 });
 
