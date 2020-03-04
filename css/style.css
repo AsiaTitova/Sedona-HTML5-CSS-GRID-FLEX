@@ -94,11 +94,16 @@ display: none;
   text-align: right;
 }
 
+
+.navigation-item:nth-child(3) {
+  margin-left: 82px;
+}
+
 .promo {
   background-image: url(../img/polygon.png), url(../img/background-photo.jpg);
   background-repeat: no-repeat;
   position:relative;
-  background-position: 0px 518px, 0px -26px;
+  background-position: 0px 449px, 0px -80px;
   display: flex;
   flex-direction: column;
   box-sizing: content-box;
@@ -107,10 +112,12 @@ display: none;
 .promo-picture img {
   position: relative;
   margin: 0;
-  padding-top: 132px;
-  padding-bottom: 81px;
-  left: 50%;
+  padding-top: 76px;
+  padding-bottom: 70px;
+  margin-left: 50%;
   transform: translateX(-50%);
+  
+  
 }
 
 .promo-wrapper {
@@ -130,7 +137,7 @@ display: none;
 }
 
 .promo-reasons {
-  margin-top: 38px;
+  margin-top: 28px;
   text-align: center;
   color: #333333;
 }
@@ -169,13 +176,21 @@ display: none;
 .reasons-info {
   width: 400px;
   padding-top: 46px; 
-  padding-bottom: 61px;
+  padding-bottom: 57px;
 }
 
 .reasons-info p {
   width: 280px;
   margin: 0 auto;
+  padding-top: 25px;
+}
+
+.reasons-info p:last-child {
   padding-top: 20px;
+}
+
+.reasons-info-last p {
+  width: 259px;
 }
 
 .img-wrap {
@@ -191,20 +206,22 @@ display: none;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-
-  width: 150px;
   margin: 0 auto;
 }
 
 .advantages-item {
   width: 33.33%;
-  padding-bottom: 86px;
-  padding-top: 164px;
+  padding-bottom: 70px;
+  padding-top: 140px;
   padding-left: 60px;
   padding-right: 55px;
 }
 
-.advantages .housing {
+.advantages-item p {
+  margin-top: 24px;
+}
+
+.advantages .house {
   position: relative;
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
@@ -213,7 +230,7 @@ display: none;
 }
 
 
-.advantages .food {
+.advantages .souvenirs {
   position: relative;
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
@@ -221,7 +238,7 @@ display: none;
   background-position: left 162px top 60px;
 }
 
-.advantages .souvenirs {
+.advantages .food {
   position: relative;
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
@@ -231,6 +248,10 @@ display: none;
 
 .reverse {
   flex-direction: row-reverse;
+}
+
+.reverse p {
+  width: 302px;
 }
 
 .blue-bg {
@@ -264,8 +285,8 @@ display: none;
 
 .offers h2 {
   margin: 0;
-  padding-bottom: 20px; 
-  padding-top: 57px;
+  padding-bottom: 25px; 
+  padding-top: 51px;
   font-size: 30px;
   font-weight: bold;
   line-height: 1.2;
@@ -276,7 +297,7 @@ display: none;
 .question {
   margin: 0 auto;
   width: 434px;
-  padding-bottom: 52px;
+  padding-bottom: 49px;
   text-align: center;
 }
 
@@ -287,7 +308,7 @@ display: none;
 .offers-button {
   border: none;
   margin: 0 auto;
-  padding: 35px 139px;
+  padding: 30px 138px;
   width: 568px;
   display: block;
 
@@ -316,11 +337,12 @@ display: none;
 
 
 
-.form-show {
+.form {
   width: 568px;
   padding: 55px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
+  position: absolute;
   margin-left: 50%;
   transform: translateX(-50%);
   
@@ -343,31 +365,31 @@ display: none;
   100% {transform: scaleY(1) translateX(-50%)}     
 }
 
-.form-close {
-  display: none;
-}
-
 .offers-button {
   position: relative;
   z-index: 1;
 }
 
 .form-wrap {
-  min-height: 593px;
   position: relative;
   z-index: 1;
-  margin-bottom: -122px;
+  display: none;
 }
 
 .map {
-  position: absolute;
+  min-height: 593px; 
+  margin-bottom: -122px;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;  
+  bottom: 122px; 
   z-index: 0;
   width: 1200px;
   height: 593px;
+}
 
-  background-image: url(../img/map.jpg);
-  background-repeat: no-repeat;  
-  top: 305px;
+
+.form-show {
+  display: block;
 }
 
 
@@ -548,9 +570,9 @@ input::-webkit-inner-spin-button {
 
 .page-footer {
   margin: 0;
-  padding-top: 36px;
+  padding-top: 33px;
   padding-bottom: 32px;
-  padding-left: 132px;
+  padding-left: 125px;
   padding-right: 101px;
 
   color: #000000;
@@ -569,9 +591,12 @@ input::-webkit-inner-spin-button {
   line-height: 1.24; 
 }
 
+.tel {
+  padding-top: 5px;
+}
 
 .socials {
-  padding-left: 169px;
+  padding-left: 176px;
   padding-right: 228px;
   margin: 0;
   margin-left: auto;
@@ -590,6 +615,10 @@ input::-webkit-inner-spin-button {
   display: flex;
    
   background-color: #81b3d2;
+}
+
+.socials-item a {
+  width: 46px;
 }
 
 .socials-item:not(:last-child) {
@@ -648,6 +677,10 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 
+.copyright p {
+  margin-top: 10px;
+}
+
 .htmlacademy-logo {
   width: 115px;
   height: 41px;
@@ -657,10 +690,14 @@ input::-webkit-inner-spin-button {
 .htmlacademy-logo path:hover,
 .htmlacademy-logo path:focus {
   fill: #81b3d2;
+  width: 115px;
+  height: 41px
 }
 
 .htmlacademy-logo path:active {
   fill: #bdbbbc;
+  width: 115px;
+  height: 41px
 }
 
 .registration {
@@ -675,16 +712,20 @@ input::-webkit-inner-spin-button {
 
 .registration-form {
   display: flex;
-  padding: 31px 72px;
+  padding: 26px 60px;
+  padding-bottom: 23px;
 }
 
 fieldset{
   border: 0 none;
 }
+.housing {
+  margin-left: 94px;
+}
 
 .registration p {
   margin: 0px;
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 .registration label {
@@ -730,18 +771,19 @@ input[type="checkbox"] + label::before {
 .cost-wrap {
   margin-left: auto;
   box-sizing: content-box;
+  margin-right: 3px;
 }
 
 .cost-name {
   margin-bottom: 9px;
-
+  margin-top: -5px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
 }
 
 .cost-control {
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   position: relative;
   border: 2px solid #ffffff;
@@ -765,7 +807,7 @@ input[type="checkbox"] + label::before {
   display: inline-block;
   
   font-size: 14px;
-  line-height: 38px;
+  line-height: 33px;
   vertical-align: top;
 
   cursor: pointer;
@@ -783,7 +825,7 @@ input[type="checkbox"] + label::before {
 
   color: inherit;
   font: inherit;
-
+  line-height: 100%;
   background: none;
   border: none;
 }
@@ -821,7 +863,6 @@ input[type="checkbox"] + label::before {
 }
 
 
-
 .range-toggle-min {
   left: 0;
 }
@@ -832,6 +873,7 @@ input[type="checkbox"] + label::before {
 
 .range-toggle:hover {
   background: #1c4f80;
+  transform: scale(1.1);
 }
 
 .show {
@@ -865,7 +907,7 @@ input[type="checkbox"] + label::before {
   line-height: 1.24;
   text-align: left;
   color: #000000;
-  padding: 31px 72px;
+  padding: 9px 72px;
 }
 
 .filters-list {
@@ -907,8 +949,8 @@ input[type="checkbox"] + label::before {
 
 .filters-item a:active {
   opacity: 1;
-  color: #000000 !important;
-  text-decoration: none 
+  color: #000000;
+  text-decoration: none; 
 }
 
 .filters-item a:focus {
@@ -916,6 +958,14 @@ input[type="checkbox"] + label::before {
   color: #81b3d2;
   text-decoration: none;
 }
+
+.active-filters a {
+  opacity: 1;
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+
 
 .filters-arrow {
   display: flex;
@@ -931,6 +981,13 @@ input[type="checkbox"] + label::before {
   fill: #000000;
 }
 
+.up {
+  margin-right: 11px;
+}
+
+.down path {
+  fill: #81b3d2;
+}
 
 .results-list {
   margin: 0;
@@ -940,7 +997,7 @@ input[type="checkbox"] + label::before {
 
 .results-item {
   display: flex;
-  padding: 30px 72px;
+  padding: 29px 72px;
   border-top: 1px solid #f2f2f2;
   
 }
@@ -967,6 +1024,7 @@ input[type="checkbox"] + label::before {
   margin: 0;
 }
 .name {
+  margin-top: -5px;
 }
 
 .info h2 {
@@ -985,7 +1043,7 @@ input[type="checkbox"] + label::before {
 }
 
 .colls p {
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
 
 .left-col {
@@ -1010,31 +1068,31 @@ input[type="checkbox"] + label::before {
   background-image: url(../img/star.svg);
   background-repeat: space;  
   
-  margin-bottom: 30px;
+  margin-bottom: 42px;
 }
 
 .four {
   width: 89px;
   height: 21px;
-  margin-left: 21px;
+  margin-left: 25px;
 }
 
 .three {
-  width: 68px;
+  width: 65px;
   height: 21px;
   margin-left: 46px; 
 }
 
 .two {
-  width: 47px;
+  width: 41px;
   height: 21px;
-  margin-left: 70px;
+  margin-left: 71px;
 }
 
 .rating p {
   margin: 0;
-  padding-top: 5px;
-  padding-bottom: 6px;
+
+  padding-bottom: 3px;
   padding-left: 16px;
   padding-right: 13px;
 
@@ -1050,8 +1108,8 @@ input[type="checkbox"] + label::before {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 16px;
-  padding-right: 16px;
-  
+  padding-right: 17px;
+
   font-weight: bold;
   color: #ffffff;
 }
