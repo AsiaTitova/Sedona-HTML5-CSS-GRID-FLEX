@@ -6,7 +6,7 @@ if (popup) {
 
 var button = document.querySelector(".offers-button");
 
-var checkin = popup.querySelector("[name=cheсkin]");
+var checkin = popup.querySelector("[name=checkin]");
 var checkout = popup.querySelector("[name=checkout]");
 var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
@@ -16,13 +16,16 @@ button.addEventListener("click", function (evt) {
     
     evt.preventDefault();
     popup.classList.toggle("form-show");
+    popup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
-    if (!cheсkin.value || !checkout.value || !adults.value) {
+    if (!checkin.value || !checkout.value || !adults.value) {
       evt.preventDefault();
-      popup.classList.add("modal-error");
-
+      popup.classList.remove("modal-error");
+      form.offsetWidth = form.offsetWidth;
+      popup.classList.add("modal-error")
   }
-});
+}
+);
 
