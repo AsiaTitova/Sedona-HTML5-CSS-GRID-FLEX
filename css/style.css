@@ -728,7 +728,7 @@ input[type="number"] {
 
 .registration-form {
   display: flex;
-  padding: 26px 60px;
+  padding: 28px 60px;
   padding-bottom: 23px;
 }
 
@@ -832,7 +832,6 @@ input[type="checkbox"] + label::before {
 .cost-wrap {
   margin-left: auto;
   box-sizing: content-box;
-  margin-right: 3px;
 }
 
 .cost-name {
@@ -874,10 +873,14 @@ input[type="checkbox"] + label::before {
   cursor: pointer;
 }
 
-.cost-control .min-price,
+.cost-control .min-price {
+  width: 98px;
+  padding-left: 67px;
+}
+
 .cost-control .max-price {
-  width: 90px;
-  padding-left: 65px;
+  width:  98px;
+  padding-left: 47px;
 }
 
 .cost-control input {
