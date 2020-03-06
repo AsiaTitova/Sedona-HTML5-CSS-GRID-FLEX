@@ -32,8 +32,14 @@ a {
 }
 
 .visually-hidden {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation-list,
@@ -357,11 +363,12 @@ a {
 .offers-button {
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 
 .form-wrap {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: none;
 }
 
@@ -375,6 +382,16 @@ a {
   z-index: 0;
   width: 1200px;
   height: 593px;
+}
+
+.image-map {
+    position: absolute;
+    z-index: 0;
+}
+
+.map-link {
+    position: relative;
+    z-index: 1;
 }
 
 .form-show {
@@ -438,6 +455,8 @@ a {
   border: none;
   position: absolute;
   right: 0;
+  top: 0;
+  cursor: pointer;
 }
 
 .calendar svg:hover,
@@ -488,6 +507,7 @@ input[type="number"] {
   color: #a9a9a9;
   font-weight: bold;
   position: relative;
+  cursor: pointer;
 }
 
 .plus:hover::before,
@@ -514,7 +534,7 @@ input[type="number"] {
   position: absolute;
   top: 17px;
   left: 13px;
-  width: 12px;
+  width: 13px;
   height: 3px;
   background-color: #a9a9a9;
 }
@@ -525,7 +545,7 @@ input[type="number"] {
   position: absolute;
   top: 17px;
   left: 13px;
-  width: 12px;
+  width: 13px;
   height: 3px;
   background-color: #a9a9a9;
 }
@@ -549,6 +569,7 @@ input[type="number"] {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #81b3d2;
+  cursor: pointer;
 }
 
 .find:hover,
@@ -640,13 +661,13 @@ input[type="number"] {
   margin-right: 6px;
 }
 
-.socials-item:focus,
-.socials-item:hover {
+.socials-item a:focus,
+.socials-item a:hover {
   background-color: #669ec0;
 }
 
-.socials-item:active {
-  background-color: #5496bd;
+.socials-item a:active {
+  background-color: #669ec0;
 }
 
 .twitter::before {
@@ -702,14 +723,14 @@ input[type="number"] {
   margin-left: 8px;
 }
 
-.htmlacademy-logo path:hover,
-.htmlacademy-logo path:focus {
+.htmlacademy-logo:hover svg,
+.htmlacademy-logo:focus svg {
   fill: #81b3d2;
   width: 115px;
   height: 41px
 }
 
-.htmlacademy-logo path:active {
+.htmlacademy-logo:active svg{
   fill: #bdbbbc;
   width: 115px;
   height: 41px
@@ -750,33 +771,14 @@ fieldset {
   padding-left: 42px;
 }
 
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
+input[type="checkbox"]:focus + label {
+  outline: 2px solid  #81b3d2;
 }
 
-input[type="checkbox"]:focus {
-  content: "";
-  position: absolute;
-  outline: 2px solid #FFFFFF;
-  width: 30px;
-  height: 30px;
-  margin-left: -3px;
-  margin-top: -3px;
+input[type="checkbox"]:checked:focus + label {
+  outline: 2px solid  #81b3d2;
 }
 
-input[type="checkbox"]:checked:focus {
-  content: "";
-  position: absolute;
-  outline: 2px solid #FFFFFF;
-  width: 30px;
-  height: 30px;
-  margin-left: -3px;
-  margin-top: -3px;
-}
 
 input[type="checkbox"]:checked + label::before {
   content: "";
@@ -1019,20 +1021,25 @@ input[type="checkbox"] + label::before {
   margin-left: auto;
 }
 
-.filters-arrow-item path:active,
-.filters-arrow-item path:focus {
-  fill: #81b3d2;
+.up svg {
+  fill: #cacaca;
 }
 
-.filters-arrow-item path:hover {
+
+.up:hover svg,
+.up:focus svg {
   fill: #000000;
+}
+
+.up:active svg {
+  fill: #81b3d2;
 }
 
 .up {
   margin-right: 11px;
 }
 
-.down path {
+.down svg {
   fill: #81b3d2;
 }
 
