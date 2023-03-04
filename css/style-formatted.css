@@ -21,6 +21,9 @@ body {
 .page-wrapper {
   position: relative;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, .2);
@@ -37,6 +40,11 @@ p {
 a {
   text-decoration: none;
   color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -116,6 +124,7 @@ a {
 .navigation-item:nth-child(4n - 1) {
   margin-left: 82px;
 }
+
 
 .promo {
   position: relative;
@@ -634,6 +643,8 @@ input[type='number'] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
+  bottom: 0;
   padding: 30px 70px 40px;
   color: #000;
 }
@@ -858,6 +869,8 @@ input[type='checkbox'] + label::before {
 
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
+
+  cursor: pointer;
 }
 
 .infrastructure-legend,
